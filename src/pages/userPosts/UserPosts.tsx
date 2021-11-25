@@ -1,10 +1,14 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import './UserPosts.scss';
+import { useNavigate, useParams } from 'react-router-dom';
 import posts from '../../data/posts.json';
 import PageNotFound from '../404/PageNotFound';
+import SinglePost from '../../components/singlePost/SinglePost';
+import Button from '../../components/buttons/Button';
 
 const UserPosts = () => {
   const { id } = useParams<'id'>();
+  const navigate = useNavigate();
 
   if (!id) {
     return null;
@@ -19,16 +23,15 @@ const UserPosts = () => {
   return (
     <div className="post-wrapper">
       <section className="user-posts">
-        {
-          postData.map((post) => (
-            <div className="user-posts__post">
-              <h2>{post.title}</h2>
-              <h5>{`PostID: ${post.id}`}</h5>
-              <p>{post.body}</p>
-            </div>
-          ))
-        }
+        <div className="user-posts__post-wrapper">
+          {
+            postData.map((post) => (
+              <SinglePost title={post.title} id={`PostID: ${post.id}`} body={post.body} />
+            ))
+          }
+        </div>
       </section>
+      <Button title="Go Back" clickHandler={() => navigate(-1)} />
     </div>
   );
 };

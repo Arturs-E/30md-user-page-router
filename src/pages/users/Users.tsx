@@ -5,7 +5,7 @@ import users from '../../data/users.json';
 const Users = () => (
   <section className="users-wrapper">
     <div className="users">
-      <table>
+      <table className="result-table">
         <tr>
           <th>User ID</th>
           <th>Name</th>

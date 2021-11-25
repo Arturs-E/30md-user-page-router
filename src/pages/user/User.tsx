@@ -3,6 +3,7 @@ import './User.scss';
 import { useNavigate, useParams } from 'react-router-dom';
 import users from '../../data/users.json';
 import PageNotFound from '../404/PageNotFound';
+import Button from '../../components/buttons/Button';
 
 const User = () => {
   const { id } = useParams<'id'>();
@@ -68,8 +69,10 @@ const User = () => {
           </tr>
         </table>
       </div>
-      <button onClick={() => navigate(-1)}>Go Back</button>
-      <button onClick={() => navigate('posts')}>See blog posts</button>
+      <div className="user__buttons-wrapper">
+        <Button title="Go Back" clickHandler={() => navigate(-1)} />
+        <Button title="See Blog Posts" clickHandler={() => navigate('posts')} />
+      </div>
     </section>
   );
 };

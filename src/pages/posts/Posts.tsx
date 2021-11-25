@@ -6,7 +6,7 @@ import posts from '../../data/posts.json';
 const Posts = () => (
   <section className="posts-wrapper">
     <div className="posts">
-      <table>
+      <table className="result-table">
         <tr>
           <th>Post ID</th>
           <th>Post Title</th>

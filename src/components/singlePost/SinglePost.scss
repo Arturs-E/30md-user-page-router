@@ -1,0 +1,19 @@
+.post {
+
+  &__title {
+    margin-bottom: 4px;
+  }
+
+  &__title::first-letter {
+    text-transform: uppercase;
+  }
+
+  &__userid {
+    color: #999;
+    margin-bottom: 16px;
+  }
+
+  &__content::first-letter {
+    text-transform: uppercase;
+  }
+}
