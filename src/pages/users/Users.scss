@@ -1,0 +1,10 @@
+.users-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+  justify-items: left;
+}
+
+.users {
+  place-self: stretch;
+}
