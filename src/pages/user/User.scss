@@ -6,6 +6,25 @@
 
 .user {
 
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    & th {
+      padding: 8px 6px;
+      background-color: #666;
+      color: #ffffff;
+      font-weight: 500;
+      text-align: left;
+    }
+
+    & td {
+      border-bottom: 1px solid #bbbbbb;
+      padding: 8px 6px;
+    }
+
+  }
+
   &__buttons-wrapper {
     display: flex;
     gap: 24px

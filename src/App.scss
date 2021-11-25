@@ -1,6 +1,7 @@
 .App {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 5px;
 }
 
 h2 {
@@ -21,13 +22,11 @@ h2 {
     color: #ffffff;
     font-weight: 600;
     text-align: left;
-    width: min-content;
   }
 
   & td {
     border-bottom: 1px solid #bbbbbb;
     padding: 3px 6px;
-    width: min-content;
   }
 
   & td a {

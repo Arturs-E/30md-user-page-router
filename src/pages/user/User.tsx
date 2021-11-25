@@ -26,25 +26,21 @@ const User = () => {
   return (
     <section className="user-wrapper">
       <div className="user">
-        <table>
+        <table className="user__table">
           <tr>
-            <th>Parameter</th>
-            <th>Data</th>
-          </tr>
-          <tr>
-            <td>Name</td>
+            <th>Name</th>
             <td>{name}</td>
           </tr>
           <tr>
-            <td>Username</td>
+            <th>Username</th>
             <td>{username}</td>
           </tr>
           <tr>
-            <td>Email</td>
+            <th>Email</th>
             <td>{email}</td>
           </tr>
           <tr>
-            <td>Address</td>
+            <th>Address</th>
             <td>
               {address.street}
               {', '}
@@ -56,15 +52,15 @@ const User = () => {
             </td>
           </tr>
           <tr>
-            <td>Phone</td>
+            <th>Phone</th>
             <td>{phone}</td>
           </tr>
           <tr>
-            <td>Website</td>
+            <th>Website</th>
             <td>{website}</td>
           </tr>
           <tr>
-            <td>Company</td>
+            <th>Company</th>
             <td>{company.name}</td>
           </tr>
         </table>
