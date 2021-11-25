@@ -4,9 +4,9 @@ import { Link, useSearchParams } from 'react-router-dom';
 import users from '../../data/users.json';
 
 const Users = () => {
+  const [inputValue, setInputValue] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
   const user = searchParams.get('user');
-  const [inputValue, setInputValue] = useState('');
 
   const loadAllUsers = () => (
     users.map((item) => (
