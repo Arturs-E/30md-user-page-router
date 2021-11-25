@@ -8,7 +8,7 @@ const Users = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const user = searchParams.get('user');
 
-  const loadAllUsers = () => (
+  const showAllUsers = () => (
     users.map((item) => (
       <tr key={item.id}>
         <td>
@@ -25,7 +25,7 @@ const Users = () => {
     ))
   );
 
-  const loadFilteredUsers = () => (
+  const showFilteredUsers = () => (
     users
       .filter((value) => value.name.toLowerCase().includes(user!.toLowerCase()))
       .map((item) => (
@@ -68,8 +68,8 @@ const Users = () => {
           </tr>
           {
             user === null
-              ? (loadAllUsers())
-              : (loadFilteredUsers())
+              ? (showAllUsers())
+              : (showFilteredUsers())
           }
         </table>
       </div>
