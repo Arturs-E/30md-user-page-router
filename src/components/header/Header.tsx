@@ -1,12 +1,22 @@
 import React from 'react';
 import './Header.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <div className="header">
     <nav className="header__navigation">
-      <Link to="/">Users</Link>
-      <Link to="/posts">Posts</Link>
+      <NavLink
+        to="/users"
+        className={({ isActive }) => (isActive ? 'navigation navigation--active' : 'navigation')}
+      >
+        Users
+      </NavLink>
+      <NavLink
+        to="/posts"
+        className={({ isActive }) => (isActive ? 'navigation navigation--active' : 'navigation')}
+      >
+        Posts
+      </NavLink>
     </nav>
   </div>
 );

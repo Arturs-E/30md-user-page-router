@@ -11,3 +11,13 @@
     font-size: 20px;
   }
 }
+
+.navigation {
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 2px;
+
+  &--active {
+    border-bottom-color: crimson;
+  }
+}
