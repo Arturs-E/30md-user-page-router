@@ -68,7 +68,8 @@ const User = () => {
           </tr>
         </table>
       </div>
-      <button onClick={() => navigate(-1)}>Go back</button>
+      <button onClick={() => navigate(-1)}>Go Back</button>
+      <button onClick={() => navigate('posts')}>See blog posts</button>
     </section>
   );
 };

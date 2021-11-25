@@ -13,7 +13,7 @@ const Posts = () => (
         </tr>
         {
           posts.map((post) => (
-            <tr>
+            <tr key={post.id}>
               <td>
                 <Link to={`${post.id}`}>
                   {post.id}

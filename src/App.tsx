@@ -9,6 +9,7 @@ import Post from './pages/post/Post';
 import PageNotFound from './pages/404/PageNotFound';
 import Users from './pages/users/Users';
 import User from './pages/user/User';
+import UserPosts from './pages/userPosts/UserPosts';
 
 const App = () => (
   <BrowserRouter>
@@ -18,6 +19,7 @@ const App = () => (
           <Route index element={<Navigate to="users" />} />
           <Route path="users" element={<Users />} />
           <Route path="users/:id" element={<User />} />
+          <Route path="users/:id/posts" element={<UserPosts />} />
           <Route path="posts" element={<Posts />} />
           <Route path="posts/:id" element={<Post />} />
           <Route path="*" element={<PageNotFound />} />
