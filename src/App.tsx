@@ -8,6 +8,7 @@ import Posts from './pages/posts/Posts';
 import Post from './pages/post/Post';
 import PageNotFound from './pages/404/PageNotFound';
 import Users from './pages/users/Users';
+import User from './pages/user/User';
 
 const App = () => (
   <BrowserRouter>
@@ -16,7 +17,7 @@ const App = () => (
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate to="users" />} />
           <Route path="users" element={<Users />} />
-          <Route path="users/:id" element={<Users />} />
+          <Route path="users/:id" element={<User />} />
           <Route path="posts" element={<Posts />} />
           <Route path="posts/:id" element={<Post />} />
           <Route path="*" element={<PageNotFound />} />
