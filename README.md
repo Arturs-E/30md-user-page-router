@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+# User Page (React)
+
+![User page GIF](./User_page-react.gif)
+
+---
+
+## Uzdevums
+Uztaisīt lietotāju lapu.
+
+## Nosacījumi
+
+- Lapai ir divas sadaļas Users un Posts. 
+- Posts sadaļā ir redzams saraksts ar bloga ierakstiem. Datus ņemt no https://jsonplaceholder.typicode.com/posts.  Route ir /posts
+- Nospiežot uz kāda ieraksta, lietotājs tiek aizvests uz /posts/id, kur id vietā ir attiecīgā ieraksta id un tiek parādīta paplašināta informācija par ierakstu.
+- Users sadaļā ir redzams saraksts ar lietotājiem, datus ņemt no https://jsonplaceholder.typicode.com/users. Route ir /users
+- Route / redirektē uz /users
+- Nospiežot uz kāda lietotāja, lietotājs tiek aizvests uz /users/id, kur id vietā ir attiecīgās lietotāja id un tiek parādīta paplašināta informācija par attiecīgo lietotāju
+- /users/id lapā ir redzama poga Go Back, kas aizved atpakaļ uz /users
+- /users/id lapā ir redzama poga See Blog Posts, kas aizved uz lapu, kur var redzēt lietotāja bloga postus pēc lietotāja id.
+- Ierakstot neeksistējošu route, lietotājs tiek aizvests uz 404 lapu
+
+## Bonuss
+- /users sadaļā var filtrēt lietotājus pēc vārda, izmantojot searchParams
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
