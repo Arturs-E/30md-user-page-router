@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/30md-user-page-router/static/css/main.26a10b82.chunk.css",
+    "main.js": "/30md-user-page-router/static/js/main.2af1291c.chunk.js",
+    "main.js.map": "/30md-user-page-router/static/js/main.2af1291c.chunk.js.map",
+    "runtime-main.js": "/30md-user-page-router/static/js/runtime-main.c1e97894.js",
+    "runtime-main.js.map": "/30md-user-page-router/static/js/runtime-main.c1e97894.js.map",
+    "static/js/2.31448ddb.chunk.js": "/30md-user-page-router/static/js/2.31448ddb.chunk.js",
+    "static/js/2.31448ddb.chunk.js.map": "/30md-user-page-router/static/js/2.31448ddb.chunk.js.map",
+    "static/js/3.12f2af6e.chunk.js": "/30md-user-page-router/static/js/3.12f2af6e.chunk.js",
+    "static/js/3.12f2af6e.chunk.js.map": "/30md-user-page-router/static/js/3.12f2af6e.chunk.js.map",
+    "index.html": "/30md-user-page-router/index.html",
+    "static/css/main.26a10b82.chunk.css.map": "/30md-user-page-router/static/css/main.26a10b82.chunk.css.map",
+    "static/js/2.31448ddb.chunk.js.LICENSE.txt": "/30md-user-page-router/static/js/2.31448ddb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1e97894.js",
+    "static/js/2.31448ddb.chunk.js",
+    "static/css/main.26a10b82.chunk.css",
+    "static/js/main.2af1291c.chunk.js"
+  ]
+}
