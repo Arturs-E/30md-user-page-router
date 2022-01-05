@@ -1,5 +1,7 @@
 # User Page (React)
 
+You can view the project here - https://arturs-e.github.io/30md-user-page-router/
+
 ![User page GIF](./User_page-react.gif)
 
 ---

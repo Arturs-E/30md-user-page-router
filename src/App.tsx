@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import {
-  BrowserRouter, Navigate, Route, Routes,
+  BrowserRouter, HashRouter, Navigate, Route, Routes,
 } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Posts from './pages/posts/Posts';
@@ -12,7 +12,8 @@ import User from './pages/user/User';
 import UserPosts from './pages/userPosts/UserPosts';
 
 const App = () => (
-  <BrowserRouter>
+  // Change to BrowserRouter for normal workflow
+  <HashRouter>
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -26,7 +27,7 @@ const App = () => (
         </Route>
       </Routes>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
